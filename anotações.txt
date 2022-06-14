@@ -1,0 +1,3 @@
+ na cahamada só entra as variaveis 
+coloca endereço na lista de parametros se caso a variavel va sofrer variações ai coloca o &
+dentro da função a variavel declarada com o & na frente deve ser colocada na função com o * na frente 

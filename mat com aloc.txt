@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+//========================================================1
+void *leitor_de_n (int *n, int *m)
+{
+printf("digite qunatas linhas tera a matriz: ");
+scanf("%d",&*n);
+printf("\ndigite quantas colunas tera a matiz: ");
+scanf("%d",&*m);
+return *n, *m; 
+}
+//========================================================2
+void **alocador_de_memorias(float *mat)
+{
+int n;
+int m;
+mat=(float*)calloc(n,sizeof(float));
+if(mat==NULL)
+{
+printf("\n Erro de alocacao");
+exit(1);
+}
+mat=(float*)calloc(m,sizeof(float));
+if(mat==NULL)
+{
+printf("\n Erro de alocacao");
+exit(1);
+}
+return mat;
+}
+
+//========================================================3
+float *leitor_de_matriz (int &mat )
+{
+int *n;
+int *m;
+int i, j;
+// ---------------------------parte que chama a matriz 2
+float *ende;
+**alocador_de_memorias(&ende);
+printf("%f\n", *ende);
+//-------------------------------------------------------
+printf("digite os numeros da sua matriz");
+alocador_de_memorias(&n, &m);
+for(i=0;i<*n;i++)
+for(j=0;j<*m;j++)
+print("[%2d][%2d] :", i+1, j+1);
+scanf ("%d", &mat [i][j]);
+}
+//========================================================main
+
+int main() 
+{
+int N, M;
+float *ende;
+
+
+leitor_de_n(&N,&M);
+**alocador_de_memorias(&ende);
+printf("%d\n", N);
+printf("%d\n", M);
+printf("%f\n", *ende);
+
+printf("Hello World\n");
+return 0;
+}
